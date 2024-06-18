@@ -10,7 +10,7 @@ auto correctStream(std::vector<std::string> const& src,
                    std::vector<std::string> const& tgt) -> std::vector<int> {
     std::vector<int> result(src.size(), 0);
     for(size_t i = 0; i < src.size(); i++) {
-        if(src[i].compare(tgt[i]) == 0) {
+        if(src[i] == tgt[i]) {
             result[i] = 1;
         } else {
             result[i] = -1;
@@ -24,7 +24,7 @@ auto correctStream(std::vector<std::string> const& src,
 // //  If the vector is empty, return an empty vector.
 auto negate(std::vector<int> const& src) -> std::vector<int> {
     std::vector<int> result(src.size(), 0);
-    if(0 == src.size())
+    if(src.empty())
         return result;
 
     for(size_t i = 0; i < src.size(); i++) {
@@ -39,7 +39,7 @@ auto negate(std::vector<int> const& src) -> std::vector<int> {
 // //  Return false for an empty array.
 auto existsHigher(std::vector<int> const& src, int n) -> bool {
     bool result{false};
-    if(src.size() == 0) {
+    if(src.empty()) {
         return result;
     }
 
@@ -74,9 +74,9 @@ auto differenceMaxMin(std::vector<int> const& src) -> int {
     int result{};
     if(src.size() < 2)
         return result;
-    std::vector<int> temp;
-    for(size_t i = 0; i < src.size(); i++) {
-        temp.push_back(src[i]);
+    std::vector<int> temp{};
+    for(const auto& s : src) {
+        temp.push_back(s);
     }
     sort(temp.begin(), temp.end());
     result = temp.back() - temp.front();

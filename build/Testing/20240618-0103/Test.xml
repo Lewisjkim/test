@@ -18,17 +18,45 @@
 	ProcessorCacheSize="32768"
 	NumberOfLogicalCPU="8"
 	NumberOfPhysicalCPU="4"
-	TotalVirtualMemory="3072"
+	TotalVirtualMemory="4096"
 	TotalPhysicalMemory="8192"
 	LogicalProcessorsPerPhysical="8"
 	ProcessorClockFrequency="1400"
 	>
 	<Testing>
-		<StartDateTime>Jun 18 14:55 KST</StartDateTime>
-		<StartTestTime>1718690134</StartTestTime>
-		<TestList/>
-		<EndDateTime>Jun 18 14:55 KST</EndDateTime>
-		<EndTestTime>1718690134</EndTestTime>
+		<StartDateTime>Jun 18 15:29 KST</StartDateTime>
+		<StartTestTime>1718692181</StartTestTime>
+		<TestList>
+			<Test>./src/week01/program01</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>program01</Name>
+			<Path>./src/week01</Path>
+			<FullName>./src/week01/program01</FullName>
+			<FullCommandLine>/Users/lewis/Desktop/test/build/src/week01/program01</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.334542</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/lewis/Desktop/test/build/src/week01/program01</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJytkD8LwkAMxfd+ithdEdHBglMRXJxOJ3E4emkb1LsjiX8GP7xXESnF0QyPx8vvDcnBhUpR9AgfAzdkoeCBBPLZZD5Z5tnhC/HVw520hXw8bvEcc6gDQ4iaGpLtElNAp+QbKAMzVmqU0V4GO4+NVRyE+CDRDTUt8mBjnVt7l9wgd1TXyOgr3NrHlny2+u/0Ln//prKCUgAs4NlJtCLokp9Cben8sXKiGNH1uh3G7xcVMJsmKMmPbq9h1Oo10WZflmtjRtkLQI+JcQ==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Jun 18 15:29 KST</EndDateTime>
+		<EndTestTime>1718692181</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
