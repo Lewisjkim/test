@@ -1743,11 +1743,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : ""
+					"value" : "Path to a program."
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : ""
+			"type" : "FILEPATH",
+			"value" : "/usr/local/bin/git"
 		},
 		{
 			"name" : "GIT_EXECUTABLE",
