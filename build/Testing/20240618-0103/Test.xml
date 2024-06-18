@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Darwin-clang++"
+	BuildStamp="20240618-0103-Experimental"
+	Name="gimjusecBookPro"
+	Generator="ctest-3.29.5"
+	CompilerName="/usr/bin/clang++"
+	CompilerVersion="14.0.3.14030022"
+	OSName="macOS"
+	Hostname="gimjusecBookPro"
+	OSRelease="13.0.1"
+	OSVersion="22A400"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="142"
+	ProcessorCacheSize="32768"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="3072"
+	TotalPhysicalMemory="8192"
+	LogicalProcessorsPerPhysical="8"
+	ProcessorClockFrequency="1400"
+	>
+	<Testing>
+		<StartDateTime>Jun 18 14:34 KST</StartDateTime>
+		<StartTestTime>1718688872</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jun 18 14:34 KST</EndDateTime>
+		<EndTestTime>1718688872</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
