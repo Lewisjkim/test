@@ -1,6 +1,5 @@
-# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
 
-DisableFormat: false
+DisableFormat: true
 Language: Cpp
 Standard: Latest
 IndentWidth: 4
@@ -8,7 +7,7 @@ TabWidth: 4
 UseTab: Never
 ColumnLimit: 100
 ReflowComments: false
-SortIncludes: false
+SortIncludes: true
 
 AlignConsecutiveAssignments: true
 AlignConsecutiveDeclarations: true

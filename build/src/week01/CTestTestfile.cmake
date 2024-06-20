@@ -4,6 +4,5 @@
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-add_test(program01 "program01")
-set_tests_properties(program01 PROPERTIES  _BACKTRACE_TRIPLES "/Users/lewis/Desktop/test/src/week01/CMakeLists.txt;27;add_test;/Users/lewis/Desktop/test/src/week01/CMakeLists.txt;0;")
-subdirs("../../_deps/doctest-build")
+add_test([=[program01]=] "program01")
+set_tests_properties([=[program01]=] PROPERTIES  _BACKTRACE_TRIPLES "/Users/lewis/Desktop/test/src/week01/CMakeLists.txt;16;add_test;/Users/lewis/Desktop/test/src/week01/CMakeLists.txt;0;")

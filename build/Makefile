@@ -536,6 +536,19 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
+# Target rules for targets named doctest_with_main
+
+# Build rule for target.
+doctest_with_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doctest_with_main
+.PHONY : doctest_with_main
+
+# fast build rule for target.
+doctest_with_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build.make _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build
+.PHONY : doctest_with_main/fast
+
+#=============================================================================
 # Target rules for targets named testlib
 
 # Build rule for target.
@@ -547,6 +560,19 @@ testlib: cmake_check_build_system
 testlib/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/build
 .PHONY : testlib/fast
+
+#=============================================================================
+# Target rules for targets named testlib2
+
+# Build rule for target.
+testlib2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testlib2
+.PHONY : testlib2
+
+# fast build rule for target.
+testlib2/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/build
+.PHONY : testlib2/fast
 
 #=============================================================================
 # Target rules for targets named program01
@@ -562,17 +588,17 @@ program01/fast:
 .PHONY : program01/fast
 
 #=============================================================================
-# Target rules for targets named doctest_with_main
+# Target rules for targets named program02
 
 # Build rule for target.
-doctest_with_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doctest_with_main
-.PHONY : doctest_with_main
+program02: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 program02
+.PHONY : program02
 
 # fast build rule for target.
-doctest_with_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build.make _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build
-.PHONY : doctest_with_main/fast
+program02/fast:
+	$(MAKE) $(MAKESILENT) -f src/week02/CMakeFiles/program02.dir/build.make src/week02/CMakeFiles/program02.dir/build
+.PHONY : program02/fast
 
 # Help Target
 help:
@@ -617,7 +643,9 @@ help:
 	@echo "... NightlyUpdate"
 	@echo "... doctest_with_main"
 	@echo "... program01"
+	@echo "... program02"
 	@echo "... testlib"
+	@echo "... testlib2"
 .PHONY : help
 
 

@@ -1,5 +1,3 @@
-
-#include <algorithm>
 #include <vector>
 #include <string>
 auto correctStream(std::vector<std::string> const& src,

@@ -77,5 +77,11 @@
     "editor.formatOnSave": true,
     "C_Cpp.autocompleteAddParentheses": true,
     "C_Cpp.codeAnalysis.clangTidy.enabled": true,
-    "C_Cpp.codeAnalysis.clangTidy.path": "/Users/lewis/Desktop/test/.clang-tidy"
+    "C_Cpp.codeAnalysis.clangTidy.path": "/Users/lewis/Desktop/test/.clang-tidy",
+    "C_Cpp.intelliSenseEngineFallback": "enabled",
+    "clangd.detectExtensionConflicts": false,
+    "clangd.enableCodeCompletion": true,
+    "clangTidy.lintLanguages": [
+        "cpp"
+    ]
 }

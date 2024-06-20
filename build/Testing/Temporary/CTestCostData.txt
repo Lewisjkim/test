@@ -1,2 +1,4 @@
-program01 8 0.372369
+program01 1 0.00593805
+program02 0 0
 ---
+program02

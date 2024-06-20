@@ -99,6 +99,7 @@ clean: CMakeFiles/ContinuousTest.dir/clean
 clean: CMakeFiles/ContinuousCoverage.dir/clean
 clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
+clean: _deps/doctest-build/clean
 clean: src/clean
 .PHONY : clean
 
@@ -122,16 +123,21 @@ _deps/doctest-build/clean: _deps/doctest-build/CMakeFiles/doctest_with_main.dir/
 
 # Recursive "all" directory target.
 src/all: src/CMakeFiles/testlib.dir/all
+src/all: src/CMakeFiles/testlib2.dir/all
 src/all: src/week01/all
+src/all: src/week02/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
 src/preinstall: src/week01/preinstall
+src/preinstall: src/week02/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
 src/clean: src/CMakeFiles/testlib.dir/clean
+src/clean: src/CMakeFiles/testlib2.dir/clean
 src/clean: src/week01/clean
+src/clean: src/week02/clean
 .PHONY : src/clean
 
 #=============================================================================
@@ -147,8 +153,22 @@ src/week01/preinstall:
 
 # Recursive "clean" directory target.
 src/week01/clean: src/week01/CMakeFiles/program01.dir/clean
-src/week01/clean: _deps/doctest-build/clean
 .PHONY : src/week01/clean
+
+#=============================================================================
+# Directory level rules for directory src/week02
+
+# Recursive "all" directory target.
+src/week02/all: src/week02/CMakeFiles/program02.dir/all
+.PHONY : src/week02/all
+
+# Recursive "preinstall" directory target.
+src/week02/preinstall:
+.PHONY : src/week02/preinstall
+
+# Recursive "clean" directory target.
+src/week02/clean: src/week02/CMakeFiles/program02.dir/clean
+.PHONY : src/week02/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Experimental.dir
@@ -879,13 +899,39 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 .PHONY : CMakeFiles/ContinuousSubmit.dir/clean
 
 #=============================================================================
+# Target rules for target _deps/doctest-build/CMakeFiles/doctest_with_main.dir
+
+# All Build rule for target.
+_deps/doctest-build/CMakeFiles/doctest_with_main.dir/all:
+	$(MAKE) $(MAKESILENT) -f _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build.make _deps/doctest-build/CMakeFiles/doctest_with_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build.make _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/lewis/Desktop/test/build/CMakeFiles --progress-num=1,2 "Built target doctest_with_main"
+.PHONY : _deps/doctest-build/CMakeFiles/doctest_with_main.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/doctest-build/CMakeFiles/doctest_with_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lewis/Desktop/test/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/doctest-build/CMakeFiles/doctest_with_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lewis/Desktop/test/build/CMakeFiles 0
+.PHONY : _deps/doctest-build/CMakeFiles/doctest_with_main.dir/rule
+
+# Convenience name for target.
+doctest_with_main: _deps/doctest-build/CMakeFiles/doctest_with_main.dir/rule
+.PHONY : doctest_with_main
+
+# clean rule for target.
+_deps/doctest-build/CMakeFiles/doctest_with_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build.make _deps/doctest-build/CMakeFiles/doctest_with_main.dir/clean
+.PHONY : _deps/doctest-build/CMakeFiles/doctest_with_main.dir/clean
+
+#=============================================================================
 # Target rules for target src/CMakeFiles/testlib.dir
 
 # All Build rule for target.
 src/CMakeFiles/testlib.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/lewis/Desktop/test/build/CMakeFiles --progress-num=5,6 "Built target testlib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/lewis/Desktop/test/build/CMakeFiles --progress-num=7,8 "Built target testlib"
 .PHONY : src/CMakeFiles/testlib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -903,6 +949,32 @@ testlib: src/CMakeFiles/testlib.dir/rule
 src/CMakeFiles/testlib.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/clean
 .PHONY : src/CMakeFiles/testlib.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/testlib2.dir
+
+# All Build rule for target.
+src/CMakeFiles/testlib2.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/lewis/Desktop/test/build/CMakeFiles --progress-num=9,10 "Built target testlib2"
+.PHONY : src/CMakeFiles/testlib2.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/testlib2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lewis/Desktop/test/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/testlib2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lewis/Desktop/test/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/testlib2.dir/rule
+
+# Convenience name for target.
+testlib2: src/CMakeFiles/testlib2.dir/rule
+.PHONY : testlib2
+
+# clean rule for target.
+src/CMakeFiles/testlib2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/clean
+.PHONY : src/CMakeFiles/testlib2.dir/clean
 
 #=============================================================================
 # Target rules for target src/week01/CMakeFiles/program01.dir
@@ -931,30 +1003,30 @@ src/week01/CMakeFiles/program01.dir/clean:
 .PHONY : src/week01/CMakeFiles/program01.dir/clean
 
 #=============================================================================
-# Target rules for target _deps/doctest-build/CMakeFiles/doctest_with_main.dir
+# Target rules for target src/week02/CMakeFiles/program02.dir
 
 # All Build rule for target.
-_deps/doctest-build/CMakeFiles/doctest_with_main.dir/all:
-	$(MAKE) $(MAKESILENT) -f _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build.make _deps/doctest-build/CMakeFiles/doctest_with_main.dir/depend
-	$(MAKE) $(MAKESILENT) -f _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build.make _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/lewis/Desktop/test/build/CMakeFiles --progress-num=1,2 "Built target doctest_with_main"
-.PHONY : _deps/doctest-build/CMakeFiles/doctest_with_main.dir/all
+src/week02/CMakeFiles/program02.dir/all: src/CMakeFiles/testlib2.dir/all
+	$(MAKE) $(MAKESILENT) -f src/week02/CMakeFiles/program02.dir/build.make src/week02/CMakeFiles/program02.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/week02/CMakeFiles/program02.dir/build.make src/week02/CMakeFiles/program02.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/lewis/Desktop/test/build/CMakeFiles --progress-num=5,6 "Built target program02"
+.PHONY : src/week02/CMakeFiles/program02.dir/all
 
 # Build rule for subdir invocation for target.
-_deps/doctest-build/CMakeFiles/doctest_with_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lewis/Desktop/test/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/doctest-build/CMakeFiles/doctest_with_main.dir/all
+src/week02/CMakeFiles/program02.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lewis/Desktop/test/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/week02/CMakeFiles/program02.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lewis/Desktop/test/build/CMakeFiles 0
-.PHONY : _deps/doctest-build/CMakeFiles/doctest_with_main.dir/rule
+.PHONY : src/week02/CMakeFiles/program02.dir/rule
 
 # Convenience name for target.
-doctest_with_main: _deps/doctest-build/CMakeFiles/doctest_with_main.dir/rule
-.PHONY : doctest_with_main
+program02: src/week02/CMakeFiles/program02.dir/rule
+.PHONY : program02
 
 # clean rule for target.
-_deps/doctest-build/CMakeFiles/doctest_with_main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build.make _deps/doctest-build/CMakeFiles/doctest_with_main.dir/clean
-.PHONY : _deps/doctest-build/CMakeFiles/doctest_with_main.dir/clean
+src/week02/CMakeFiles/program02.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/week02/CMakeFiles/program02.dir/build.make src/week02/CMakeFiles/program02.dir/clean
+.PHONY : src/week02/CMakeFiles/program02.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

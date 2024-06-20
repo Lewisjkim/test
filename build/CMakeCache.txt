@@ -18,9 +18,6 @@
 BUILD_TESTING:BOOL=ON
 
 //Path to a program.
-CLANG_TIDY_BIN:FILEPATH=/usr/local/bin/clang-tidy
-
-//Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
 //Path to a program.
@@ -319,7 +316,7 @@ FETCHCONTENT_UPDATES_DISCONNECTED_DOCTEST:BOOL=OFF
 GITCOMMAND:FILEPATH=/usr/local/bin/git
 
 //Git command line client
-GIT_EXECUTABLE:FILEPATH=/usr/bin/git
+GIT_EXECUTABLE:FILEPATH=/usr/local/bin/git
 
 //Command to build the project
 MAKECOMMAND:STRING=/usr/local/Cellar/cmake/3.29.5/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
@@ -329,9 +326,6 @@ MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
 
 //File that contains suppressions for the memory checker
 MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
-
-//Path to a program.
-RUN_CLANG_TIDY_BIN:FILEPATH=RUN_CLANG_TIDY_BIN-NOTFOUND
 
 //Name of the computer/site where compile is being run
 SITE:STRING=gimjusecBookPro
@@ -353,6 +347,15 @@ testlib_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 testlib_SOURCE_DIR:STATIC=/Users/lewis/Desktop/test/src
+
+//Value Computed by CMake
+testprogram2_BINARY_DIR:STATIC=/Users/lewis/Desktop/test/build/src/week02
+
+//Value Computed by CMake
+testprogram2_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+testprogram2_SOURCE_DIR:STATIC=/Users/lewis/Desktop/test/src/week02
 
 //Value Computed by CMake
 testprogram_BINARY_DIR:STATIC=/Users/lewis/Desktop/test/build/src/week01
@@ -462,7 +465,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -511,10 +514,10 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 COVERAGE_COMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: COVERAGE_EXTRA_FLAGS
 COVERAGE_EXTRA_FLAGS-ADVANCED:INTERNAL=1
-CPM_DIRECTORY:INTERNAL=/Users/lewis/Desktop/test/build/src/week01/cmake
+CPM_DIRECTORY:INTERNAL=/Users/lewis/Desktop/test/build/cmake
 //Don't download or configure dependencies (for testing)
 CPM_DRY_RUN:INTERNAL=OFF
-CPM_FILE:INTERNAL=/Users/lewis/Desktop/test/build/src/week01/cmake/CPM.cmake
+CPM_FILE:INTERNAL=/Users/lewis/Desktop/test/build/cmake/CPM.cmake
 CPM_INDENT:INTERNAL=CPM:
 CPM_MODULE_PATH:INTERNAL=/Users/lewis/Desktop/test/build/CPM_modules
 CPM_PACKAGES:INTERNAL=doctest
