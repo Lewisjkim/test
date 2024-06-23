@@ -15,8 +15,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "_deps/doctest-src/scripts/cmake/Config.cmake.in"
   "cmake/CPM.cmake"
   "/Users/lewis/Desktop/test/src/CMakeLists.txt"
-  "/Users/lewis/Desktop/test/src/week01/CMakeLists.txt"
-  "/Users/lewis/Desktop/test/src/week02/CMakeLists.txt"
+  "/Users/lewis/Desktop/test/src/week01/week01Tests/CMakeLists.txt"
+  "/Users/lewis/Desktop/test/src/week02/week02Tests/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.29.5/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in"
   "/usr/local/Cellar/cmake/3.29.5/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.29.5/share/cmake/Modules/CMakeCXXInformation.cmake"
@@ -68,8 +68,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "_deps/doctest-build/generated/doctestConfig.cmake"
   "_deps/doctest-build/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/week01/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/week02/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/week01/week01Tests/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/week02/week02Tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -105,6 +105,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "_deps/doctest-build/CMakeFiles/doctest_with_main.dir/DependInfo.cmake"
   "src/CMakeFiles/testlib.dir/DependInfo.cmake"
   "src/CMakeFiles/testlib2.dir/DependInfo.cmake"
-  "src/week01/CMakeFiles/program01.dir/DependInfo.cmake"
-  "src/week02/CMakeFiles/program02.dir/DependInfo.cmake"
+  "src/week01/week01Tests/CMakeFiles/program01.dir/DependInfo.cmake"
+  "src/week02/week02Tests/CMakeFiles/program02.dir/DependInfo.cmake"
   )

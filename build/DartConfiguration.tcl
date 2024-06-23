@@ -11,7 +11,7 @@ BuildDirectory: /Users/lewis/Desktop/test/build
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: gimjusecBookPro
+Site: gimjuseong-ui-MacBookPro.local
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Darwin-clang++
@@ -64,7 +64,7 @@ UpdateType: git
 
 # Compiler info
 Compiler: /usr/bin/clang++
-CompilerVersion: 14.0.3.14030022
+CompilerVersion: 15.0.0.15000309
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 

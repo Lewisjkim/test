@@ -199,53 +199,53 @@ testlib2/fast:
 	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/build
 .PHONY : testlib2/fast
 
-week01.o: week01.cpp.o
-.PHONY : week01.o
+week01/week01.o: week01/week01.cpp.o
+.PHONY : week01/week01.o
 
 # target to build an object file
-week01.cpp.o:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/week01.cpp.o
-.PHONY : week01.cpp.o
+week01/week01.cpp.o:
+	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/week01/week01.cpp.o
+.PHONY : week01/week01.cpp.o
 
-week01.i: week01.cpp.i
-.PHONY : week01.i
+week01/week01.i: week01/week01.cpp.i
+.PHONY : week01/week01.i
 
 # target to preprocess a source file
-week01.cpp.i:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/week01.cpp.i
-.PHONY : week01.cpp.i
+week01/week01.cpp.i:
+	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/week01/week01.cpp.i
+.PHONY : week01/week01.cpp.i
 
-week01.s: week01.cpp.s
-.PHONY : week01.s
+week01/week01.s: week01/week01.cpp.s
+.PHONY : week01/week01.s
 
 # target to generate assembly for a file
-week01.cpp.s:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/week01.cpp.s
-.PHONY : week01.cpp.s
+week01/week01.cpp.s:
+	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/week01/week01.cpp.s
+.PHONY : week01/week01.cpp.s
 
-week02.o: week02.cpp.o
-.PHONY : week02.o
+week02/week02.o: week02/week02.cpp.o
+.PHONY : week02/week02.o
 
 # target to build an object file
-week02.cpp.o:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/week02.cpp.o
-.PHONY : week02.cpp.o
+week02/week02.cpp.o:
+	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/week02/week02.cpp.o
+.PHONY : week02/week02.cpp.o
 
-week02.i: week02.cpp.i
-.PHONY : week02.i
+week02/week02.i: week02/week02.cpp.i
+.PHONY : week02/week02.i
 
 # target to preprocess a source file
-week02.cpp.i:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/week02.cpp.i
-.PHONY : week02.cpp.i
+week02/week02.cpp.i:
+	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/week02/week02.cpp.i
+.PHONY : week02/week02.cpp.i
 
-week02.s: week02.cpp.s
-.PHONY : week02.s
+week02/week02.s: week02/week02.cpp.s
+.PHONY : week02/week02.s
 
 # target to generate assembly for a file
-week02.cpp.s:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/week02.cpp.s
-.PHONY : week02.cpp.s
+week02/week02.cpp.s:
+	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/week02/week02.cpp.s
+.PHONY : week02/week02.cpp.s
 
 # Help Target
 help:
@@ -262,12 +262,12 @@ help:
 	@echo "... test"
 	@echo "... testlib"
 	@echo "... testlib2"
-	@echo "... week01.o"
-	@echo "... week01.i"
-	@echo "... week01.s"
-	@echo "... week02.o"
-	@echo "... week02.i"
-	@echo "... week02.s"
+	@echo "... week01/week01.o"
+	@echo "... week01/week01.i"
+	@echo "... week01/week01.s"
+	@echo "... week02/week02.o"
+	@echo "... week02/week02.i"
+	@echo "... week02/week02.s"
 .PHONY : help
 
 

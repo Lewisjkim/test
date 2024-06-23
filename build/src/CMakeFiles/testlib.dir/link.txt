@@ -1,2 +1,2 @@
-/usr/bin/ar qc libtestlib.a CMakeFiles/testlib.dir/week01.cpp.o
+/usr/bin/ar qc libtestlib.a CMakeFiles/testlib.dir/week01/week01.cpp.o
 /usr/bin/ranlib libtestlib.a

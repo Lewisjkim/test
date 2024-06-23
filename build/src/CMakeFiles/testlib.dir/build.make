@@ -69,28 +69,28 @@ include src/CMakeFiles/testlib.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/testlib.dir/flags.make
 
-src/CMakeFiles/testlib.dir/week01.cpp.o: src/CMakeFiles/testlib.dir/flags.make
-src/CMakeFiles/testlib.dir/week01.cpp.o: /Users/lewis/Desktop/test/src/week01.cpp
-src/CMakeFiles/testlib.dir/week01.cpp.o: src/CMakeFiles/testlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lewis/Desktop/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/testlib.dir/week01.cpp.o"
-	cd /Users/lewis/Desktop/test/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/testlib.dir/week01.cpp.o -MF CMakeFiles/testlib.dir/week01.cpp.o.d -o CMakeFiles/testlib.dir/week01.cpp.o -c /Users/lewis/Desktop/test/src/week01.cpp
+src/CMakeFiles/testlib.dir/week01/week01.cpp.o: src/CMakeFiles/testlib.dir/flags.make
+src/CMakeFiles/testlib.dir/week01/week01.cpp.o: /Users/lewis/Desktop/test/src/week01/week01.cpp
+src/CMakeFiles/testlib.dir/week01/week01.cpp.o: src/CMakeFiles/testlib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lewis/Desktop/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/testlib.dir/week01/week01.cpp.o"
+	cd /Users/lewis/Desktop/test/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/testlib.dir/week01/week01.cpp.o -MF CMakeFiles/testlib.dir/week01/week01.cpp.o.d -o CMakeFiles/testlib.dir/week01/week01.cpp.o -c /Users/lewis/Desktop/test/src/week01/week01.cpp
 
-src/CMakeFiles/testlib.dir/week01.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testlib.dir/week01.cpp.i"
-	cd /Users/lewis/Desktop/test/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lewis/Desktop/test/src/week01.cpp > CMakeFiles/testlib.dir/week01.cpp.i
+src/CMakeFiles/testlib.dir/week01/week01.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testlib.dir/week01/week01.cpp.i"
+	cd /Users/lewis/Desktop/test/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lewis/Desktop/test/src/week01/week01.cpp > CMakeFiles/testlib.dir/week01/week01.cpp.i
 
-src/CMakeFiles/testlib.dir/week01.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testlib.dir/week01.cpp.s"
-	cd /Users/lewis/Desktop/test/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lewis/Desktop/test/src/week01.cpp -o CMakeFiles/testlib.dir/week01.cpp.s
+src/CMakeFiles/testlib.dir/week01/week01.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testlib.dir/week01/week01.cpp.s"
+	cd /Users/lewis/Desktop/test/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lewis/Desktop/test/src/week01/week01.cpp -o CMakeFiles/testlib.dir/week01/week01.cpp.s
 
 # Object files for target testlib
 testlib_OBJECTS = \
-"CMakeFiles/testlib.dir/week01.cpp.o"
+"CMakeFiles/testlib.dir/week01/week01.cpp.o"
 
 # External object files for target testlib
 testlib_EXTERNAL_OBJECTS =
 
-src/libtestlib.a: src/CMakeFiles/testlib.dir/week01.cpp.o
+src/libtestlib.a: src/CMakeFiles/testlib.dir/week01/week01.cpp.o
 src/libtestlib.a: src/CMakeFiles/testlib.dir/build.make
 src/libtestlib.a: src/CMakeFiles/testlib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lewis/Desktop/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libtestlib.a"

@@ -584,7 +584,7 @@ program01: cmake_check_build_system
 
 # fast build rule for target.
 program01/fast:
-	$(MAKE) $(MAKESILENT) -f src/week01/CMakeFiles/program01.dir/build.make src/week01/CMakeFiles/program01.dir/build
+	$(MAKE) $(MAKESILENT) -f src/week01/week01Tests/CMakeFiles/program01.dir/build.make src/week01/week01Tests/CMakeFiles/program01.dir/build
 .PHONY : program01/fast
 
 #=============================================================================
@@ -597,7 +597,7 @@ program02: cmake_check_build_system
 
 # fast build rule for target.
 program02/fast:
-	$(MAKE) $(MAKESILENT) -f src/week02/CMakeFiles/program02.dir/build.make src/week02/CMakeFiles/program02.dir/build
+	$(MAKE) $(MAKESILENT) -f src/week02/week02Tests/CMakeFiles/program02.dir/build.make src/week02/week02Tests/CMakeFiles/program02.dir/build
 .PHONY : program02/fast
 
 # Help Target

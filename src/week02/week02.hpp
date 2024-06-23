@@ -1,5 +1,6 @@
 #include <vector>
 #include <string>
+#include "stdarg.h"
 
 auto findIndex(std::vector<std::string> const& src, std::string const& tgt) -> int;
 auto divisible(std::vector<int> const& src) -> bool;

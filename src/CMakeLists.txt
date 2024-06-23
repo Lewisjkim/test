@@ -1,7 +1,9 @@
+project(
+  testlib
+  VERSION 0.1.0
+  LANGUAGES C CXX)
 
-project(testlib VERSION 0.1.0 LANGUAGES C CXX)
-
-add_library(testlib STATIC week01.cpp)
-add_library(testlib2 STATIC week02.cpp)
-add_subdirectory(week01)
-add_subdirectory(week02)
+add_library(testlib STATIC week01/week01.cpp)
+add_library(testlib2 STATIC week02/week02.cpp)
+add_subdirectory(week01/week01Tests)
+add_subdirectory(week02/week02Tests)
