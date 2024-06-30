@@ -575,6 +575,19 @@ testlib2/fast:
 .PHONY : testlib2/fast
 
 #=============================================================================
+# Target rules for targets named testlib3
+
+# Build rule for target.
+testlib3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testlib3
+.PHONY : testlib3
+
+# fast build rule for target.
+testlib3/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib3.dir/build.make src/CMakeFiles/testlib3.dir/build
+.PHONY : testlib3/fast
+
+#=============================================================================
 # Target rules for targets named program01
 
 # Build rule for target.
@@ -599,6 +612,19 @@ program02: cmake_check_build_system
 program02/fast:
 	$(MAKE) $(MAKESILENT) -f src/week02/week02Tests/CMakeFiles/program02.dir/build.make src/week02/week02Tests/CMakeFiles/program02.dir/build
 .PHONY : program02/fast
+
+#=============================================================================
+# Target rules for targets named program03
+
+# Build rule for target.
+program03: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 program03
+.PHONY : program03
+
+# fast build rule for target.
+program03/fast:
+	$(MAKE) $(MAKESILENT) -f src/week03/week03Tests/CMakeFiles/program03.dir/build.make src/week03/week03Tests/CMakeFiles/program03.dir/build
+.PHONY : program03/fast
 
 # Help Target
 help:
@@ -644,8 +670,10 @@ help:
 	@echo "... doctest_with_main"
 	@echo "... program01"
 	@echo "... program02"
+	@echo "... program03"
 	@echo "... testlib"
 	@echo "... testlib2"
+	@echo "... testlib3"
 .PHONY : help
 
 

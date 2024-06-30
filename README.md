@@ -33,3 +33,6 @@ test
 우박사님 pdf file / doctest homepage / llvm homepage
 
 프로파일링 해야될 경우는 visual studio에서 진행을 해야될 수있다.
+
+#namespace를 사용하는 걸로 수정 입력 namespace
+#cmake에 option build test on off??

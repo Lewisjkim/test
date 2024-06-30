@@ -6,3 +6,4 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("week01/week01Tests")
 subdirs("week02/week02Tests")
+subdirs("week03/week03Tests")

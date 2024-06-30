@@ -199,6 +199,20 @@ testlib2/fast:
 	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/build
 .PHONY : testlib2/fast
 
+# Convenience name for target.
+src/CMakeFiles/testlib3.dir/rule:
+	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/testlib3.dir/rule
+.PHONY : src/CMakeFiles/testlib3.dir/rule
+
+# Convenience name for target.
+testlib3: src/CMakeFiles/testlib3.dir/rule
+.PHONY : testlib3
+
+# fast build rule for target.
+testlib3/fast:
+	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib3.dir/build.make src/CMakeFiles/testlib3.dir/build
+.PHONY : testlib3/fast
+
 week01/week01.o: week01/week01.cpp.o
 .PHONY : week01/week01.o
 
@@ -247,6 +261,30 @@ week02/week02.cpp.s:
 	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/week02/week02.cpp.s
 .PHONY : week02/week02.cpp.s
 
+week03/week03.o: week03/week03.cpp.o
+.PHONY : week03/week03.o
+
+# target to build an object file
+week03/week03.cpp.o:
+	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib3.dir/build.make src/CMakeFiles/testlib3.dir/week03/week03.cpp.o
+.PHONY : week03/week03.cpp.o
+
+week03/week03.i: week03/week03.cpp.i
+.PHONY : week03/week03.i
+
+# target to preprocess a source file
+week03/week03.cpp.i:
+	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib3.dir/build.make src/CMakeFiles/testlib3.dir/week03/week03.cpp.i
+.PHONY : week03/week03.cpp.i
+
+week03/week03.s: week03/week03.cpp.s
+.PHONY : week03/week03.s
+
+# target to generate assembly for a file
+week03/week03.cpp.s:
+	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib3.dir/build.make src/CMakeFiles/testlib3.dir/week03/week03.cpp.s
+.PHONY : week03/week03.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -262,12 +300,16 @@ help:
 	@echo "... test"
 	@echo "... testlib"
 	@echo "... testlib2"
+	@echo "... testlib3"
 	@echo "... week01/week01.o"
 	@echo "... week01/week01.i"
 	@echo "... week01/week01.s"
 	@echo "... week02/week02.o"
 	@echo "... week02/week02.i"
 	@echo "... week02/week02.s"
+	@echo "... week03/week03.o"
+	@echo "... week03/week03.i"
+	@echo "... week03/week03.s"
 .PHONY : help
 
 

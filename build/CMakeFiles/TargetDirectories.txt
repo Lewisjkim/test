@@ -43,6 +43,7 @@
 /Users/lewis/Desktop/test/build/_deps/doctest-build/CMakeFiles/install/strip.dir
 /Users/lewis/Desktop/test/build/src/CMakeFiles/testlib.dir
 /Users/lewis/Desktop/test/build/src/CMakeFiles/testlib2.dir
+/Users/lewis/Desktop/test/build/src/CMakeFiles/testlib3.dir
 /Users/lewis/Desktop/test/build/src/CMakeFiles/test.dir
 /Users/lewis/Desktop/test/build/src/CMakeFiles/edit_cache.dir
 /Users/lewis/Desktop/test/build/src/CMakeFiles/rebuild_cache.dir
@@ -66,3 +67,11 @@
 /Users/lewis/Desktop/test/build/src/week02/week02Tests/CMakeFiles/install.dir
 /Users/lewis/Desktop/test/build/src/week02/week02Tests/CMakeFiles/install/local.dir
 /Users/lewis/Desktop/test/build/src/week02/week02Tests/CMakeFiles/install/strip.dir
+/Users/lewis/Desktop/test/build/src/week03/week03Tests/CMakeFiles/program03.dir
+/Users/lewis/Desktop/test/build/src/week03/week03Tests/CMakeFiles/test.dir
+/Users/lewis/Desktop/test/build/src/week03/week03Tests/CMakeFiles/edit_cache.dir
+/Users/lewis/Desktop/test/build/src/week03/week03Tests/CMakeFiles/rebuild_cache.dir
+/Users/lewis/Desktop/test/build/src/week03/week03Tests/CMakeFiles/list_install_components.dir
+/Users/lewis/Desktop/test/build/src/week03/week03Tests/CMakeFiles/install.dir
+/Users/lewis/Desktop/test/build/src/week03/week03Tests/CMakeFiles/install/local.dir
+/Users/lewis/Desktop/test/build/src/week03/week03Tests/CMakeFiles/install/strip.dir

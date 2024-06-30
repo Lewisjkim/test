@@ -47,3 +47,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/lewis/Desktop/test/build/src/week02/week02Tests/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/lewis/Desktop/test/build/src/week03/week03Tests/cmake_install.cmake")
+endif()
+

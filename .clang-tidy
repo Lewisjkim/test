@@ -1,0 +1,11 @@
+Checks: '-*,
+         clang-diagnostic-*,
+         clang-analyzer-*,
+         performance-*,
+         modernize-*,
+         cppcoreguidelines-*,
+         portability-*
+        '
+#WarningsAsErrors: '-*'
+
+#HeaderFilterRegex: '.*h$'

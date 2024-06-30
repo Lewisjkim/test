@@ -124,20 +124,25 @@ _deps/doctest-build/clean: _deps/doctest-build/CMakeFiles/doctest_with_main.dir/
 # Recursive "all" directory target.
 src/all: src/CMakeFiles/testlib.dir/all
 src/all: src/CMakeFiles/testlib2.dir/all
+src/all: src/CMakeFiles/testlib3.dir/all
 src/all: src/week01/week01Tests/all
 src/all: src/week02/week02Tests/all
+src/all: src/week03/week03Tests/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
 src/preinstall: src/week01/week01Tests/preinstall
 src/preinstall: src/week02/week02Tests/preinstall
+src/preinstall: src/week03/week03Tests/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
 src/clean: src/CMakeFiles/testlib.dir/clean
 src/clean: src/CMakeFiles/testlib2.dir/clean
+src/clean: src/CMakeFiles/testlib3.dir/clean
 src/clean: src/week01/week01Tests/clean
 src/clean: src/week02/week02Tests/clean
+src/clean: src/week03/week03Tests/clean
 .PHONY : src/clean
 
 #=============================================================================
@@ -169,6 +174,21 @@ src/week02/week02Tests/preinstall:
 # Recursive "clean" directory target.
 src/week02/week02Tests/clean: src/week02/week02Tests/CMakeFiles/program02.dir/clean
 .PHONY : src/week02/week02Tests/clean
+
+#=============================================================================
+# Directory level rules for directory src/week03/week03Tests
+
+# Recursive "all" directory target.
+src/week03/week03Tests/all: src/week03/week03Tests/CMakeFiles/program03.dir/all
+.PHONY : src/week03/week03Tests/all
+
+# Recursive "preinstall" directory target.
+src/week03/week03Tests/preinstall:
+.PHONY : src/week03/week03Tests/preinstall
+
+# Recursive "clean" directory target.
+src/week03/week03Tests/clean: src/week03/week03Tests/CMakeFiles/program03.dir/clean
+.PHONY : src/week03/week03Tests/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Experimental.dir
@@ -931,7 +951,7 @@ _deps/doctest-build/CMakeFiles/doctest_with_main.dir/clean:
 src/CMakeFiles/testlib.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/lewis/Desktop/test/build/CMakeFiles --progress-num=7,8 "Built target testlib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/lewis/Desktop/test/build/CMakeFiles --progress-num=9,10 "Built target testlib"
 .PHONY : src/CMakeFiles/testlib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -957,7 +977,7 @@ src/CMakeFiles/testlib.dir/clean:
 src/CMakeFiles/testlib2.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/lewis/Desktop/test/build/CMakeFiles --progress-num=9,10 "Built target testlib2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/lewis/Desktop/test/build/CMakeFiles --progress-num=11,12 "Built target testlib2"
 .PHONY : src/CMakeFiles/testlib2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -975,6 +995,32 @@ testlib2: src/CMakeFiles/testlib2.dir/rule
 src/CMakeFiles/testlib2.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/clean
 .PHONY : src/CMakeFiles/testlib2.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/testlib3.dir
+
+# All Build rule for target.
+src/CMakeFiles/testlib3.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib3.dir/build.make src/CMakeFiles/testlib3.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib3.dir/build.make src/CMakeFiles/testlib3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/lewis/Desktop/test/build/CMakeFiles --progress-num=13,14 "Built target testlib3"
+.PHONY : src/CMakeFiles/testlib3.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/testlib3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lewis/Desktop/test/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/testlib3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lewis/Desktop/test/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/testlib3.dir/rule
+
+# Convenience name for target.
+testlib3: src/CMakeFiles/testlib3.dir/rule
+.PHONY : testlib3
+
+# clean rule for target.
+src/CMakeFiles/testlib3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib3.dir/build.make src/CMakeFiles/testlib3.dir/clean
+.PHONY : src/CMakeFiles/testlib3.dir/clean
 
 #=============================================================================
 # Target rules for target src/week01/week01Tests/CMakeFiles/program01.dir
@@ -1027,6 +1073,32 @@ program02: src/week02/week02Tests/CMakeFiles/program02.dir/rule
 src/week02/week02Tests/CMakeFiles/program02.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/week02/week02Tests/CMakeFiles/program02.dir/build.make src/week02/week02Tests/CMakeFiles/program02.dir/clean
 .PHONY : src/week02/week02Tests/CMakeFiles/program02.dir/clean
+
+#=============================================================================
+# Target rules for target src/week03/week03Tests/CMakeFiles/program03.dir
+
+# All Build rule for target.
+src/week03/week03Tests/CMakeFiles/program03.dir/all: src/CMakeFiles/testlib3.dir/all
+	$(MAKE) $(MAKESILENT) -f src/week03/week03Tests/CMakeFiles/program03.dir/build.make src/week03/week03Tests/CMakeFiles/program03.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/week03/week03Tests/CMakeFiles/program03.dir/build.make src/week03/week03Tests/CMakeFiles/program03.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/lewis/Desktop/test/build/CMakeFiles --progress-num=7,8 "Built target program03"
+.PHONY : src/week03/week03Tests/CMakeFiles/program03.dir/all
+
+# Build rule for subdir invocation for target.
+src/week03/week03Tests/CMakeFiles/program03.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lewis/Desktop/test/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/week03/week03Tests/CMakeFiles/program03.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lewis/Desktop/test/build/CMakeFiles 0
+.PHONY : src/week03/week03Tests/CMakeFiles/program03.dir/rule
+
+# Convenience name for target.
+program03: src/week03/week03Tests/CMakeFiles/program03.dir/rule
+.PHONY : program03
+
+# clean rule for target.
+src/week03/week03Tests/CMakeFiles/program03.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/week03/week03Tests/CMakeFiles/program03.dir/build.make src/week03/week03Tests/CMakeFiles/program03.dir/clean
+.PHONY : src/week03/week03Tests/CMakeFiles/program03.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

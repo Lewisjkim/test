@@ -328,7 +328,7 @@ MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
 MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
 //Name of the computer/site where compile is being run
-SITE:STRING=gimjuseong-ui-MacBookPro.local
+SITE:STRING=gimjusecBookPro
 
 //Value Computed by CMake
 doctest_BINARY_DIR:STATIC=/Users/lewis/Desktop/test/build/_deps/doctest-build
@@ -356,6 +356,15 @@ testprogram2_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 testprogram2_SOURCE_DIR:STATIC=/Users/lewis/Desktop/test/src/week02/week02Tests
+
+//Value Computed by CMake
+testprogram3_BINARY_DIR:STATIC=/Users/lewis/Desktop/test/build/src/week03/week03Tests
+
+//Value Computed by CMake
+testprogram3_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+testprogram3_SOURCE_DIR:STATIC=/Users/lewis/Desktop/test/src/week03/week03Tests
 
 //Value Computed by CMake
 testprogram_BINARY_DIR:STATIC=/Users/lewis/Desktop/test/build/src/week01/week01Tests
@@ -465,7 +474,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
