@@ -1,44 +1,44 @@
 [
 {
-  "directory": "/Users/lewis/Desktop/test/build/_deps/doctest-build",
-  "command": "/usr/bin/clang++ -DDOCTEST_CONFIG_IMPLEMENT_WITH_MAIN -isystem /Users/lewis/Desktop/test/build/_deps/doctest-src -g -std=gnu++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o -c /Users/lewis/Desktop/test/build/_deps/doctest-src/doctest/parts/doctest.cpp",
-  "file": "/Users/lewis/Desktop/test/build/_deps/doctest-src/doctest/parts/doctest.cpp",
+  "directory": "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-build",
+  "command": "/usr/bin/clang++ -DDOCTEST_CONFIG_IMPLEMENT_WITH_MAIN -isystem /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-src -g -std=gnu++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o -c /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-src/doctest/parts/doctest.cpp",
+  "file": "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-src/doctest/parts/doctest.cpp",
   "output": "_deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o"
 },
 {
-  "directory": "/Users/lewis/Desktop/test/build/src",
-  "command": "/usr/bin/clang++   -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/testlib.dir/week01/week01.cpp.o -c /Users/lewis/Desktop/test/src/week01/week01.cpp",
-  "file": "/Users/lewis/Desktop/test/src/week01/week01.cpp",
+  "directory": "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/src",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/testlib.dir/week01/week01.cpp.o -c /Users/lewis/Documents/GitHub/cpp-training-jskim/test/src/week01/week01.cpp",
+  "file": "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/src/week01/week01.cpp",
   "output": "src/CMakeFiles/testlib.dir/week01/week01.cpp.o"
 },
 {
-  "directory": "/Users/lewis/Desktop/test/build/src",
-  "command": "/usr/bin/clang++   -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/testlib2.dir/week02/week02.cpp.o -c /Users/lewis/Desktop/test/src/week02/week02.cpp",
-  "file": "/Users/lewis/Desktop/test/src/week02/week02.cpp",
+  "directory": "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/src",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/testlib2.dir/week02/week02.cpp.o -c /Users/lewis/Documents/GitHub/cpp-training-jskim/test/src/week02/week02.cpp",
+  "file": "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/src/week02/week02.cpp",
   "output": "src/CMakeFiles/testlib2.dir/week02/week02.cpp.o"
 },
 {
-  "directory": "/Users/lewis/Desktop/test/build/src",
-  "command": "/usr/bin/clang++   -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/testlib3.dir/week03/week03.cpp.o -c /Users/lewis/Desktop/test/src/week03/week03.cpp",
-  "file": "/Users/lewis/Desktop/test/src/week03/week03.cpp",
+  "directory": "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/src",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/testlib3.dir/week03/week03.cpp.o -c /Users/lewis/Documents/GitHub/cpp-training-jskim/test/src/week03/week03.cpp",
+  "file": "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/src/week03/week03.cpp",
   "output": "src/CMakeFiles/testlib3.dir/week03/week03.cpp.o"
 },
 {
-  "directory": "/Users/lewis/Desktop/test/build/src/week01/week01Tests",
-  "command": "/usr/bin/clang++  -isystem /Users/lewis/Desktop/test/build/_deps/doctest-src -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/program01.dir/week01.spec.cpp.o -c /Users/lewis/Desktop/test/src/week01/week01Tests/week01.spec.cpp",
-  "file": "/Users/lewis/Desktop/test/src/week01/week01Tests/week01.spec.cpp",
+  "directory": "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/src/week01/week01Tests",
+  "command": "/usr/bin/clang++  -isystem /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-src -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/program01.dir/week01.spec.cpp.o -c /Users/lewis/Documents/GitHub/cpp-training-jskim/test/src/week01/week01Tests/week01.spec.cpp",
+  "file": "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/src/week01/week01Tests/week01.spec.cpp",
   "output": "src/week01/week01Tests/CMakeFiles/program01.dir/week01.spec.cpp.o"
 },
 {
-  "directory": "/Users/lewis/Desktop/test/build/src/week02/week02Tests",
-  "command": "/usr/bin/clang++  -isystem /Users/lewis/Desktop/test/build/_deps/doctest-src -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/program02.dir/week02.spec.cpp.o -c /Users/lewis/Desktop/test/src/week02/week02Tests/week02.spec.cpp",
-  "file": "/Users/lewis/Desktop/test/src/week02/week02Tests/week02.spec.cpp",
+  "directory": "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/src/week02/week02Tests",
+  "command": "/usr/bin/clang++  -isystem /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-src -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/program02.dir/week02.spec.cpp.o -c /Users/lewis/Documents/GitHub/cpp-training-jskim/test/src/week02/week02Tests/week02.spec.cpp",
+  "file": "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/src/week02/week02Tests/week02.spec.cpp",
   "output": "src/week02/week02Tests/CMakeFiles/program02.dir/week02.spec.cpp.o"
 },
 {
-  "directory": "/Users/lewis/Desktop/test/build/src/week03/week03Tests",
-  "command": "/usr/bin/clang++  -isystem /Users/lewis/Desktop/test/build/_deps/doctest-src -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/program03.dir/week03.spec.cpp.o -c /Users/lewis/Desktop/test/src/week03/week03Tests/week03.spec.cpp",
-  "file": "/Users/lewis/Desktop/test/src/week03/week03Tests/week03.spec.cpp",
+  "directory": "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/src/week03/week03Tests",
+  "command": "/usr/bin/clang++  -isystem /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-src -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/program03.dir/week03.spec.cpp.o -c /Users/lewis/Documents/GitHub/cpp-training-jskim/test/src/week03/week03Tests/week03.spec.cpp",
+  "file": "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/src/week03/week03Tests/week03.spec.cpp",
   "output": "src/week03/week03Tests/CMakeFiles/program03.dir/week03.spec.cpp.o"
 }
 ]

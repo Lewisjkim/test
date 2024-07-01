@@ -9,20 +9,20 @@ using std::back_inserter;
 // distance + 예외처리도 있으면 좋을 것 같다
 auto findIndex(std::vector<std::string> const &src, std::string const &tgt) -> int
 {
-    int result{};
-    // 해당 iterator를 받아 - begin()으로 인덱스 확인
-    result = std::ranges::find(src, tgt) - src.begin();
-
-    return result;
-};
-// reduce 추천?
+    // int result{};
+    //  해당 iterator를 받아 - begin()으로 인덱스 확인
+    // result = std::ranges::find(src, tgt) - src.begin();
+    // return result;
+    return std::distance(src.begin(), std::ranges::find(src, tgt));
+}
+// reduce 추천c++17 (accumulate는 c++98)
 auto divisible(std::vector<int> const &src) -> bool
 {
     // multiple 값과 plus 값을 계산 하여 나누어 지도록 계산
-    auto product = std::accumulate(src.begin(), src.end(), 1, std::multiplies<int>());
-    auto sum = std::accumulate(src.begin(), src.end(), 0);
+    auto product = std::reduce(src.begin(), src.end(), 1, std::multiplies<int>());
+    auto sum = std::reduce(src.begin(), src.end(), 0, std::plus<int>());
 
-    return product % sum == 0 ? true : false;
+    return product % sum == 0;
 };
 // vector bool은 사용하지 말아라, 왠만하면 선언을 자재하는 방향으로
 auto factorChain(std::vector<int> const &src) -> bool

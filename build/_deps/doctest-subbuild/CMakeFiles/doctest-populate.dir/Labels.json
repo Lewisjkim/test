@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/lewis/Desktop/test/build/_deps/doctest-subbuild/CMakeFiles/doctest-populate"
+			"file" : "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-subbuild/CMakeFiles/doctest-populate"
 		},
 		{
-			"file" : "/Users/lewis/Desktop/test/build/_deps/doctest-subbuild/CMakeFiles/doctest-populate.rule"
+			"file" : "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-subbuild/CMakeFiles/doctest-populate.rule"
 		},
 		{
-			"file" : "/Users/lewis/Desktop/test/build/_deps/doctest-subbuild/CMakeFiles/doctest-populate-complete.rule"
+			"file" : "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-subbuild/CMakeFiles/doctest-populate-complete.rule"
 		},
 		{
-			"file" : "/Users/lewis/Desktop/test/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-build.rule"
+			"file" : "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-build.rule"
 		},
 		{
-			"file" : "/Users/lewis/Desktop/test/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-configure.rule"
+			"file" : "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-configure.rule"
 		},
 		{
-			"file" : "/Users/lewis/Desktop/test/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-download.rule"
+			"file" : "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-download.rule"
 		},
 		{
-			"file" : "/Users/lewis/Desktop/test/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-install.rule"
+			"file" : "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-install.rule"
 		},
 		{
-			"file" : "/Users/lewis/Desktop/test/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-mkdir.rule"
+			"file" : "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-mkdir.rule"
 		},
 		{
-			"file" : "/Users/lewis/Desktop/test/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-patch.rule"
+			"file" : "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-patch.rule"
 		},
 		{
-			"file" : "/Users/lewis/Desktop/test/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-test.rule"
+			"file" : "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-test.rule"
 		},
 		{
-			"file" : "/Users/lewis/Desktop/test/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-update.rule"
+			"file" : "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-update.rule"
 		}
 	],
 	"target" : 

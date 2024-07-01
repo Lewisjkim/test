@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.29.5/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lewis/Desktop/test
+CMAKE_SOURCE_DIR = /Users/lewis/Documents/GitHub/cpp-training-jskim/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lewis/Desktop/test/build
+CMAKE_BINARY_DIR = /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/lewis/Desktop/test/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/lewis/Desktop/test/build/CMakeFiles /Users/lewis/Desktop/test/build/src//CMakeFiles/progress.marks
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lewis/Desktop/test/build/CMakeFiles 0
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/CMakeFiles /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/src//CMakeFiles/progress.marks
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/lewis/Desktop/test/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/testlib.dir/rule:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/testlib.dir/rule
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/testlib.dir/rule
 .PHONY : src/CMakeFiles/testlib.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ testlib: src/CMakeFiles/testlib.dir/rule
 
 # fast build rule for target.
 testlib/fast:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/build
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/build
 .PHONY : testlib/fast
 
 # Convenience name for target.
 src/CMakeFiles/testlib2.dir/rule:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/testlib2.dir/rule
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/testlib2.dir/rule
 .PHONY : src/CMakeFiles/testlib2.dir/rule
 
 # Convenience name for target.
@@ -196,12 +196,12 @@ testlib2: src/CMakeFiles/testlib2.dir/rule
 
 # fast build rule for target.
 testlib2/fast:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/build
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/build
 .PHONY : testlib2/fast
 
 # Convenience name for target.
 src/CMakeFiles/testlib3.dir/rule:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/testlib3.dir/rule
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/testlib3.dir/rule
 .PHONY : src/CMakeFiles/testlib3.dir/rule
 
 # Convenience name for target.
@@ -210,7 +210,7 @@ testlib3: src/CMakeFiles/testlib3.dir/rule
 
 # fast build rule for target.
 testlib3/fast:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib3.dir/build.make src/CMakeFiles/testlib3.dir/build
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib3.dir/build.make src/CMakeFiles/testlib3.dir/build
 .PHONY : testlib3/fast
 
 week01/week01.o: week01/week01.cpp.o
@@ -218,7 +218,7 @@ week01/week01.o: week01/week01.cpp.o
 
 # target to build an object file
 week01/week01.cpp.o:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/week01/week01.cpp.o
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/week01/week01.cpp.o
 .PHONY : week01/week01.cpp.o
 
 week01/week01.i: week01/week01.cpp.i
@@ -226,7 +226,7 @@ week01/week01.i: week01/week01.cpp.i
 
 # target to preprocess a source file
 week01/week01.cpp.i:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/week01/week01.cpp.i
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/week01/week01.cpp.i
 .PHONY : week01/week01.cpp.i
 
 week01/week01.s: week01/week01.cpp.s
@@ -234,7 +234,7 @@ week01/week01.s: week01/week01.cpp.s
 
 # target to generate assembly for a file
 week01/week01.cpp.s:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/week01/week01.cpp.s
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib.dir/build.make src/CMakeFiles/testlib.dir/week01/week01.cpp.s
 .PHONY : week01/week01.cpp.s
 
 week02/week02.o: week02/week02.cpp.o
@@ -242,7 +242,7 @@ week02/week02.o: week02/week02.cpp.o
 
 # target to build an object file
 week02/week02.cpp.o:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/week02/week02.cpp.o
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/week02/week02.cpp.o
 .PHONY : week02/week02.cpp.o
 
 week02/week02.i: week02/week02.cpp.i
@@ -250,7 +250,7 @@ week02/week02.i: week02/week02.cpp.i
 
 # target to preprocess a source file
 week02/week02.cpp.i:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/week02/week02.cpp.i
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/week02/week02.cpp.i
 .PHONY : week02/week02.cpp.i
 
 week02/week02.s: week02/week02.cpp.s
@@ -258,7 +258,7 @@ week02/week02.s: week02/week02.cpp.s
 
 # target to generate assembly for a file
 week02/week02.cpp.s:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/week02/week02.cpp.s
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib2.dir/build.make src/CMakeFiles/testlib2.dir/week02/week02.cpp.s
 .PHONY : week02/week02.cpp.s
 
 week03/week03.o: week03/week03.cpp.o
@@ -266,7 +266,7 @@ week03/week03.o: week03/week03.cpp.o
 
 # target to build an object file
 week03/week03.cpp.o:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib3.dir/build.make src/CMakeFiles/testlib3.dir/week03/week03.cpp.o
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib3.dir/build.make src/CMakeFiles/testlib3.dir/week03/week03.cpp.o
 .PHONY : week03/week03.cpp.o
 
 week03/week03.i: week03/week03.cpp.i
@@ -274,7 +274,7 @@ week03/week03.i: week03/week03.cpp.i
 
 # target to preprocess a source file
 week03/week03.cpp.i:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib3.dir/build.make src/CMakeFiles/testlib3.dir/week03/week03.cpp.i
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib3.dir/build.make src/CMakeFiles/testlib3.dir/week03/week03.cpp.i
 .PHONY : week03/week03.cpp.i
 
 week03/week03.s: week03/week03.cpp.s
@@ -282,7 +282,7 @@ week03/week03.s: week03/week03.cpp.s
 
 # target to generate assembly for a file
 week03/week03.cpp.s:
-	cd /Users/lewis/Desktop/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib3.dir/build.make src/CMakeFiles/testlib3.dir/week03/week03.cpp.s
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/testlib3.dir/build.make src/CMakeFiles/testlib3.dir/week03/week03.cpp.s
 .PHONY : week03/week03.cpp.s
 
 # Help Target
@@ -321,6 +321,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/lewis/Desktop/test/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = -DDOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 
-CXX_INCLUDES = -isystem /Users/lewis/Desktop/test/build/_deps/doctest-src
+CXX_INCLUDES = -isystem /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-src
 
 CXX_FLAGS = -g -std=gnu++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
 

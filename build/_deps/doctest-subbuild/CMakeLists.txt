@@ -28,8 +28,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(doctest-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/onqtam/doctest.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "v2.4.9"
-                    SOURCE_DIR          "/Users/lewis/Desktop/test/build/_deps/doctest-src"
-                    BINARY_DIR          "/Users/lewis/Desktop/test/build/_deps/doctest-build"
+                    SOURCE_DIR          "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-src"
+                    BINARY_DIR          "/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

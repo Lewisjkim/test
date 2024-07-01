@@ -2,6 +2,6 @@
 # The patch step will be re-executed if anything in this file changes.
 # No other meaning or use of this file is supported.
 
-command (connected)=/usr/local/Cellar/cmake/3.29.5/bin/cmake;-Dcan_fetch=YES;-P;/Users/lewis/Desktop/test/build/_deps/doctest-subbuild/doctest-populate-prefix/tmp/doctest-populate-gitupdate.cmake
-command (disconnected)=/usr/local/Cellar/cmake/3.29.5/bin/cmake;-Dcan_fetch=NO;-P;/Users/lewis/Desktop/test/build/_deps/doctest-subbuild/doctest-populate-prefix/tmp/doctest-populate-gitupdate.cmake
-work_dir=/Users/lewis/Desktop/test/build/_deps/doctest-src
+command (connected)=/usr/local/Cellar/cmake/3.29.5/bin/cmake;-Dcan_fetch=YES;-P;/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-subbuild/doctest-populate-prefix/tmp/doctest-populate-gitupdate.cmake
+command (disconnected)=/usr/local/Cellar/cmake/3.29.5/bin/cmake;-Dcan_fetch=NO;-P;/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-subbuild/doctest-populate-prefix/tmp/doctest-populate-gitupdate.cmake
+work_dir=/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-src

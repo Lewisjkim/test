@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.29.5/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lewis/Desktop/test
+CMAKE_SOURCE_DIR = /Users/lewis/Documents/GitHub/cpp-training-jskim/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lewis/Desktop/test/build
+CMAKE_BINARY_DIR = /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build
 
 # Utility rule file for ExperimentalCoverage.
 
@@ -82,6 +82,6 @@ CMakeFiles/ExperimentalCoverage.dir/clean:
 .PHONY : CMakeFiles/ExperimentalCoverage.dir/clean
 
 CMakeFiles/ExperimentalCoverage.dir/depend:
-	cd /Users/lewis/Desktop/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lewis/Desktop/test /Users/lewis/Desktop/test /Users/lewis/Desktop/test/build /Users/lewis/Desktop/test/build /Users/lewis/Desktop/test/build/CMakeFiles/ExperimentalCoverage.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lewis/Documents/GitHub/cpp-training-jskim/test /Users/lewis/Documents/GitHub/cpp-training-jskim/test /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/CMakeFiles/ExperimentalCoverage.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ExperimentalCoverage.dir/depend
 

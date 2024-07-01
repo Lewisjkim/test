@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.29.5/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lewis/Desktop/test
+CMAKE_SOURCE_DIR = /Users/lewis/Documents/GitHub/cpp-training-jskim/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lewis/Desktop/test/build
+CMAKE_BINARY_DIR = /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build
 
 # Include any dependencies generated for this target.
 include _deps/doctest-build/CMakeFiles/doctest_with_main.dir/depend.make
@@ -72,16 +72,16 @@ include _deps/doctest-build/CMakeFiles/doctest_with_main.dir/flags.make
 _deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o: _deps/doctest-build/CMakeFiles/doctest_with_main.dir/flags.make
 _deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o: _deps/doctest-src/doctest/parts/doctest.cpp
 _deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o: _deps/doctest-build/CMakeFiles/doctest_with_main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lewis/Desktop/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o"
-	cd /Users/lewis/Desktop/test/build/_deps/doctest-build && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o -MF CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o.d -o CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o -c /Users/lewis/Desktop/test/build/_deps/doctest-src/doctest/parts/doctest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o"
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-build && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o -MF CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o.d -o CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o -c /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-src/doctest/parts/doctest.cpp
 
 _deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.i"
-	cd /Users/lewis/Desktop/test/build/_deps/doctest-build && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lewis/Desktop/test/build/_deps/doctest-src/doctest/parts/doctest.cpp > CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.i
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-build && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-src/doctest/parts/doctest.cpp > CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.i
 
 _deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.s"
-	cd /Users/lewis/Desktop/test/build/_deps/doctest-build && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lewis/Desktop/test/build/_deps/doctest-src/doctest/parts/doctest.cpp -o CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.s
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-build && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-src/doctest/parts/doctest.cpp -o CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.s
 
 # Object files for target doctest_with_main
 doctest_with_main_OBJECTS = \
@@ -93,19 +93,19 @@ doctest_with_main_EXTERNAL_OBJECTS =
 _deps/doctest-build/libdoctest_with_main.a: _deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o
 _deps/doctest-build/libdoctest_with_main.a: _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build.make
 _deps/doctest-build/libdoctest_with_main.a: _deps/doctest-build/CMakeFiles/doctest_with_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lewis/Desktop/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libdoctest_with_main.a"
-	cd /Users/lewis/Desktop/test/build/_deps/doctest-build && $(CMAKE_COMMAND) -P CMakeFiles/doctest_with_main.dir/cmake_clean_target.cmake
-	cd /Users/lewis/Desktop/test/build/_deps/doctest-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/doctest_with_main.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libdoctest_with_main.a"
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-build && $(CMAKE_COMMAND) -P CMakeFiles/doctest_with_main.dir/cmake_clean_target.cmake
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/doctest_with_main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build: _deps/doctest-build/libdoctest_with_main.a
 .PHONY : _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build
 
 _deps/doctest-build/CMakeFiles/doctest_with_main.dir/clean:
-	cd /Users/lewis/Desktop/test/build/_deps/doctest-build && $(CMAKE_COMMAND) -P CMakeFiles/doctest_with_main.dir/cmake_clean.cmake
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-build && $(CMAKE_COMMAND) -P CMakeFiles/doctest_with_main.dir/cmake_clean.cmake
 .PHONY : _deps/doctest-build/CMakeFiles/doctest_with_main.dir/clean
 
 _deps/doctest-build/CMakeFiles/doctest_with_main.dir/depend:
-	cd /Users/lewis/Desktop/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lewis/Desktop/test /Users/lewis/Desktop/test/build/_deps/doctest-src /Users/lewis/Desktop/test/build /Users/lewis/Desktop/test/build/_deps/doctest-build /Users/lewis/Desktop/test/build/_deps/doctest-build/CMakeFiles/doctest_with_main.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lewis/Documents/GitHub/cpp-training-jskim/test /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-src /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-build /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/_deps/doctest-build/CMakeFiles/doctest_with_main.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/doctest-build/CMakeFiles/doctest_with_main.dir/depend
 

@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /Users/lewis/Desktop/test/src
-# Build directory: /Users/lewis/Desktop/test/build/src
+# Source directory: /Users/lewis/Documents/GitHub/cpp-training-jskim/test/src
+# Build directory: /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build/src
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

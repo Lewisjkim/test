@@ -22,7 +22,7 @@ auto Week3::identicalFilter(std::vector<std::string> const &arr) -> std::vector<
 // 22
 auto Week3::shiftL(std::vector<int> const &arr, int num) -> std::vector<int>
 {
-    // left shift function which shifts amount as num -> using std::rotate
+    // using std::rotate함수를 사용해서 왼쪽으로 shift하였다
     std::vector<int> result = arr;
     std::rotate(result.begin(), result.begin() + num % arr.size(), result.end());
     return result;
@@ -37,6 +37,7 @@ auto Week3::shiftR(std::vector<int> const &arr, int num) -> std::vector<int>
 // 23
 auto Week3::setFrom(std::vector<int> const &arr) -> std::vector<int>
 {
+    // std::unique와 erase를 같이 사용해서 한개 이상인 단어들을 제거함.
     std::vector<int> result = arr;
     result.erase(std::unique(result.begin(), result.end()), result.end());
     return result;
@@ -44,6 +45,7 @@ auto Week3::setFrom(std::vector<int> const &arr) -> std::vector<int>
 // 24
 auto Week3::firstAndLast(std::string const &s) -> std::vector<std::string>
 {
+    // std::sort를 사용하여 오름차순 내림차순 값을 전달함.
     std::string src = s;
     std::vector<std::string> result;
     std::sort(src.begin(), src.end());
@@ -55,6 +57,7 @@ auto Week3::firstAndLast(std::string const &s) -> std::vector<std::string>
 // 25
 auto Week3::convertCartesian(std::vector<int> const &x, std::vector<int> const &y) -> std::vector<std::vector<int>>
 {
+    // x,y 벡터 동일 index 항목을 한쌍으로 묶었다.
     std::vector<std::vector<int>> result;
     result.reserve(x.size());
     std::transform(x.begin(), x.end(), y.begin(), std::back_inserter(result),
@@ -65,6 +68,7 @@ auto Week3::convertCartesian(std::vector<int> const &x, std::vector<int> const &
 // 26
 auto Week3::sortByLength(std::vector<std::string> const &arr) -> std::vector<std::string>
 {
+    // 입력 받은 string vector의 앞뒤 string 사이즈를 비교하여 작은 사이즈의 string을 앞으로 오게 분류함.
     std::vector<std::string> result{arr};
     std::sort(result.begin(), result.end(), [](std::string a, std::string b) { return a.size() < b.size(); });
     return result;
@@ -72,20 +76,21 @@ auto Week3::sortByLength(std::vector<std::string> const &arr) -> std::vector<std
 // 27
 auto Week3::countAdverbs(std::string const &s) -> int
 {
-    std::istringstream iss(s); // Create a string stream from the input sentence
+    // istringstream을 통해 문자열을 넣고
+    std::istringstream iss(s);
     std::string word;
-    int count = 0;
+    int count{};
 
-    // Read each word from the string stream
+    // 스트링 스트림에 있는 단어를 읽어간다.
     while (iss >> word)
     {
-        // Remove trailing period if present
+        // 단어 뒤에 문자가 있거나 "." 또는","가 있으면 해당 단어를 제거.
         if (!word.empty() && word.back() == '.' || !word.empty() && word.back() == ',')
         {
             word.pop_back();
         }
 
-        // Check if the word ends with "ly"
+        // 단어 길이가 2 이상이고 단어의 길이에서 -2개를 뺸 string이 ly일 경우 count++
         if (word.length() >= 2 && word.substr(word.length() - 2) == "ly")
         {
             count++;
@@ -104,45 +109,47 @@ auto Week3::societyName(std::vector<std::string> const &friends) -> std::string
         result += f[0];
     }
     std::sort(result.begin(), result.end());
+
     return result;
 }
 // 29
 auto Week3::isPalindrome(std::string const &str) -> bool
 {
-    bool result{false};
+    // 거꾸로 해도 같은지 확인 하기 위해
     std::string filterstr;
-    std::transform(str.begin(), str.end(), std::back_inserter(filterstr), [](char a) { return std::tolower(a); });
-    filterstr.erase(std::remove_if(filterstr.begin(), filterstr.end(),
-                                   [](char c) { return !std::isalnum(static_cast<unsigned char>(c)); }),
-                    filterstr.end());
 
+    // 우선 소문자로 만들고 filterstr에 넣는다. 그리고 isalnum과 remove_if를 이용해 숫자나알파벳이 아니면 (true)뒤로
+    // 보내고 erase를 통해서 지워질 부분을 지운다.
+    std::transform(str.begin(), str.end(), std::back_inserter(filterstr), [](char a) { return std::tolower(a); });
+    filterstr.erase(std::remove_if(filterstr.begin(), filterstr.end(), [](char c) { return !std::isalnum(c); }),
+                    filterstr.end());
+    // 반절에서 앞뒤가 같은지 비교하여 같으면 true반환.
     return std::equal(filterstr.begin(), filterstr.begin() + filterstr.size() / 2, filterstr.rbegin());
 }
 // 30
 auto Week3::countUnique(std::string const &str1, std::string const &str2) -> int
 {
-    // wrong
+    // set을 이용해서 우선 str1을 넣어주고 str2를 넣어준다. unordered_set의 특성으로 분류된 값들의 사이즈를 int로
+    // 캐스팅해서 반환한다.
     std::unordered_set<char> uniqueChars;
 
-    // Insert characters from str1 into the set
-    for (char c : str1)
+    for (auto &c : str1)
     {
         uniqueChars.insert(c);
     }
 
-    // Insert characters from str2 into the set
-    for (char c : str2)
+    for (auto &c : str2)
     {
         uniqueChars.insert(c);
     }
 
-    // Return the size of the set, which represents the number of unique characters
     return static_cast<int>(uniqueChars.size());
 }
 
 // 31
 auto Week3::isValidPhoneNumber(std::string const &str) -> bool
 {
+    // 양식을 만들고 양식 index가 #일때 숫자가 아니거나 양식과 형태가 나르면 false반환
     std::string expectedFormat = "(###) ###-####";
 
     for (size_t i = 0; i < str.length(); ++i)
@@ -168,6 +175,7 @@ auto Week3::isValidPhoneNumber(std::string const &str) -> bool
 // 32
 auto Week3::tree(int h) -> std::vector<std::string>
 {
+    //
     std::vector<std::string> result;
 
     for (int i = 1; i <= h; ++i)
@@ -175,9 +183,9 @@ auto Week3::tree(int h) -> std::vector<std::string>
         int spaces = h - i;
         int hashes = 2 * i - 1;
 
-        // Construct line: spaces + hashes + spaces
-        std::string line(spaces + hashes + spaces, ' ');                       // Create a line of appropriate size
-        std::fill(line.begin() + spaces, line.begin() + spaces + hashes, '#'); // Fill hashes in the middle
+        std::string line(spaces + hashes + spaces, ' '); // 사이즈 만큼의 빈공간
+        std::fill(line.begin() + spaces, line.begin() + spaces + hashes,
+                  '#'); // space 다음부터 hash 끝 위치까지 #으로 채운다
         result.push_back(line);
     }
 
@@ -186,6 +194,7 @@ auto Week3::tree(int h) -> std::vector<std::string>
 // 33
 auto Week3::accum(std::string const &s) -> std::string
 {
+    // 첫번째 인덱스만 대문자로 만들고 나머지는 소문자로 만들었다. 인덱스가 1부터 -추가했다.
     std::string result;
 
     for (int i = 0; i < s.size(); ++i)
@@ -195,11 +204,11 @@ auto Week3::accum(std::string const &s) -> std::string
             result += '-';
         }
 
-        result += std::toupper(s[i]); // Capitalize current character
+        result += std::toupper(s[i]);
 
         for (int j = 0; j < i; ++j)
         {
-            result += std::tolower(s[i]); // Append lowercase characters based on index
+            result += std::tolower(s[i]);
         }
     }
 
@@ -208,40 +217,30 @@ auto Week3::accum(std::string const &s) -> std::string
 // 34
 auto Week3::unique(std::vector<double> const &arr) -> double
 {
-    std::unordered_map<double, int> countMap;
+    // vector를 정렬한 후, 혼자 있는 값이면 해당 값을 반환
+    std::vector<double> sortedArr = arr;
+    std::sort(sortedArr.begin(), sortedArr.end());
 
-    // Count occurrences of each number
-    for (double num : arr)
+    for (size_t i = 0; i < sortedArr.size(); ++i)
     {
-        countMap[num]++;
-    }
-
-    // Find the number with count 1 (unique number)
-    for (auto const &pair : countMap)
-    {
-        if (pair.second == 1)
+        if ((i == 0 || sortedArr[i] != sortedArr[i - 1]) && (sortedArr[i] != sortedArr[i + 1]))
         {
-            return pair.first;
+            return sortedArr[i];
         }
     }
-
-    // If no unique number found, return a default value (or handle error as needed)
-    return std::numeric_limits<double>::quiet_NaN();
 }
 // 35
 auto Week3::isAnagram(std::string const &s1, std::string const &s2) -> bool
 {
-    std::string lower_s1 = s1;
-    std::string lower_s2 = s2;
+    // 철자 바꾸기는 곧 같은 char들이 같은 개수만큼 사용 되었다는 것으로 소문자로 만들어 분류후
+    std::string case1 = s1;
+    std::string case2 = s2;
 
-    std::transform(lower_s1.begin(), lower_s1.end(), lower_s1.begin(), [](unsigned char c) { return std::tolower(c); });
+    std::transform(case1.begin(), case1.end(), case1.begin(), [](char c) { return std::tolower(c); });
+    std::transform(case2.begin(), case2.end(), case2.begin(), [](char c) { return std::tolower(c); });
 
-    std::transform(lower_s2.begin(), lower_s2.end(), lower_s2.begin(), [](unsigned char c) { return std::tolower(c); });
+    std::sort(case1.begin(), case1.end());
+    std::sort(case2.begin(), case2.end());
 
-    // Sort both strings
-    std::sort(lower_s1.begin(), lower_s1.end());
-    std::sort(lower_s2.begin(), lower_s2.end());
-
-    // Compare sorted strings
-    return lower_s1 == lower_s2;
+    return case1 == case2;
 }

@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Users/lewis/Desktop/test
-BuildDirectory: /Users/lewis/Desktop/test/build
+SourceDirectory: /Users/lewis/Documents/GitHub/cpp-training-jskim/test
+BuildDirectory: /Users/lewis/Documents/GitHub/cpp-training-jskim/test/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/local/Cellar/cmake/3.29.5/bin/cmake" "/Users/lewis/Desktop/test"
+ConfigureCommand: "/usr/local/Cellar/cmake/3.29.5/bin/cmake" "/Users/lewis/Documents/GitHub/cpp-training-jskim/test"
 MakeCommand: /usr/local/Cellar/cmake/3.29.5/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
